@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bec3bee11636d449afcf980974fcaef, type: 3}
+  m_Name: Level21
+  m_EditorClassIdentifier: 
+  Enemies:
+  - {fileID: 319, guid: 34987b7cd6742c64c9c165b7df6db877, type: 3}
+  - {fileID: 272, guid: a5f0560f79ba1f5489c28d12b549be9d, type: 3}
+  - {fileID: 335, guid: 2885d06c64d98fb45b376e6bafce2ab1, type: 3}
+  - {fileID: 351, guid: 2d7772bfdb472414faa5cdd89cee72ec, type: 3}
+  - {fileID: 271, guid: 3f9938de5fa620f458d53bbbbbff4a80, type: 3}
+  - {fileID: 271, guid: 3f9938de5fa620f458d53bbbbbff4a80, type: 3}
+  Player: {fileID: 4226595652603823554, guid: 582d4e7237474b6449f6b3f81cc771fa, type: 3}
+  spawnPoint: {fileID: 11400000, guid: d7c7bf60c59c84548a3dd0c5e467701a, type: 2}
+  enemyGroups:
+  - {fileID: 11400000, guid: 7b0a2aae6269212458487da6c6b85389, type: 2}
+  - {fileID: 11400000, guid: dd261dd6a64e53948a5228fb728f670a, type: 2}
+  - {fileID: 11400000, guid: b55a1bb1cfe0ef140b20a63a12b9084a, type: 2}
+  - {fileID: 11400000, guid: 9a50a0dc53bb6a84a86d15aac43d066d, type: 2}
+  - {fileID: 11400000, guid: 02f9bc443d9d94745b9103a22eec43db, type: 2}
+  levelPrice: 5000
+  levelName: Level21
+  maxHealth: 0
+  currentHealth: 0
+  maxPow: 0
+  currentPow: 0
+  charName: 

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5b28bb3eae8521498e67eb2f29fef11, type: 3}
+  m_Name: BasicRightWeaponAttackFrontHip_R 1
+  m_EditorClassIdentifier: 
+  attackType: {fileID: 11400000, guid: 5a5c635e57937e74e8205161ebd98ee4, type: 2}
+  windupAttackPoses:
+  - {fileID: 11400000, guid: 487dfc28c188980498016467f1277f92, type: 2}
+  - {fileID: 11400000, guid: 509e53d1ce40d77449fb95d724a49408, type: 2}
+  - {fileID: 11400000, guid: 8abafb0f2f7b07644b6e16b3a73ec322, type: 2}
+  attackingAttackPoses:
+  - {fileID: 11400000, guid: af13618282c4c7d4297ce14849536f6b, type: 2}
+  - {fileID: 11400000, guid: 9bddb5d0627645d4e939e5f44d77bc1d, type: 2}
+  - {fileID: 11400000, guid: ed676af0ed220b946bc9fd075b89e591, type: 2}
+  afterAttackPoses:
+  - {fileID: 11400000, guid: 64f45f5f7b4b69e4fb57f836470a3e8d, type: 2}
+  - {fileID: 11400000, guid: 8f02f71cb2ce76444ab83308b748b975, type: 2}
+  - {fileID: 11400000, guid: f0d613f0543055f4baccc701975a0fd2, type: 2}
+  attackForceRatio:
+  - {fileID: 11400000, guid: 641c8201b6f3ec246a86d942236bf44b, type: 2}
+  - {fileID: 11400000, guid: 28f7650f8eecd6b49906c9f07c533a67, type: 2}
+  - {fileID: 11400000, guid: fc8011da2f8204f4cb3084b3901f127a, type: 2}
+  - {fileID: 11400000, guid: 5ecc90016cf21034780da9ee2a227a33, type: 2}
+  - {fileID: 11400000, guid: aced1dd0ecd1f0a4f9c64fed38b08f21, type: 2}
+  attackForceApplyPercent: 0.25
+  attackPowerIncreaseRate: 5
+  accuracyReduceFactor: 0
+  attackSpeed: 0.2
+  startAttackPower: 1000
+  maxAttackPower: 3500
+  minAttackPower: 1300
+  chestPart: {fileID: 11400000, guid: d94c683725b0c104bbf80698b85bbd23, type: 2}
+  bodyPartToHitWith: {fileID: 11400000, guid: bf48dae79ba887b41924dc33e5a9f63c, type: 2}
+  windupHipBodyPart: {fileID: 11400000, guid: 20ee43b86dc57b44dac3640b44a4ae64, type: 2}
+  windUpHipForward: 20
+  jumpOnWindUp: 1
+  jumpOnWindupForce: {x: 0, y: 100, z: 0}
+  attackHipForce: {x: 0, y: 0, z: 0}

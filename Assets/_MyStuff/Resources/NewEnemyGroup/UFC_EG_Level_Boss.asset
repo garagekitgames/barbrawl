@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba81bf194eca444185cb02ecc55d562, type: 3}
+  m_Name: UFC_EG_Level_Boss
+  m_EditorClassIdentifier: 
+  groupName: Boss Kimbo
+  Enemies:
+  - {fileID: 8742022072362759868, guid: 499b59575a3374a5bbb7dc0bc06b88f1, type: 3}
+  - {fileID: 825270671728955528, guid: 8c5cef890fc65439c8279e86c1b30ba4, type: 3}
+  - {fileID: 4017605323153274309, guid: 1774eded113684aa0a7697d194fd8d25, type: 3}
+  - {fileID: 7604457023852927278, guid: 2a214d6315734489388bae781d782cf4, type: 3}
+  - {fileID: 5613832354189448735, guid: c8c8a8a77a2f94125ab34c9569efd72a, type: 3}
+  maxDifficultyTime: 0.5

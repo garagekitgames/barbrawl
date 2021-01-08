@@ -1,0 +1,480 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &210407702775432794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210407702775432795}
+  - component: {fileID: 210407702775432796}
+  - component: {fileID: 1877728455}
+  - component: {fileID: 1877728456}
+  - component: {fileID: 1877728457}
+  - component: {fileID: 1877728458}
+  - component: {fileID: 1877728459}
+  - component: {fileID: 1577380695}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &210407702775432795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.014859, y: 4.8966694, z: -4.11383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &210407702775432796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f686b5bce2a98dd47a76d885afef5ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMixer: {fileID: 24100000, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+  mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+  sounds:
+  - name: CoinDrop1
+    clip: {fileID: 8300000, guid: ead95c0dd8a7f0646a1103668d5cbb47, type: 3}
+    volume: 0.1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: CoinDrop2
+    clip: {fileID: 8300000, guid: 84eca2d7a209d5b4ea70b961cbeade1e, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: CoinCollect
+    clip: {fileID: 8300000, guid: 348fd67127e81324f9d240d04f6f0117, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodImpact1
+    clip: {fileID: 8300000, guid: ed472e4700b09a146973e67b72c06b15, type: 3}
+    volume: 0.592
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodImpact2
+    clip: {fileID: 8300000, guid: 7cb4ca7e188d29f479bd45904f569261, type: 3}
+    volume: 0.494
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodImapct3
+    clip: {fileID: 8300000, guid: e6540e7a7f787de40803cf825504de3d, type: 3}
+    volume: 0.598
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodBreak1
+    clip: {fileID: 8300000, guid: 8b5120e4878862d4ea8278e2b584ff0c, type: 3}
+    volume: 0.72
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodBreak2
+    clip: {fileID: 8300000, guid: 043fffb506564d04d86c637d72ccd035, type: 3}
+    volume: 0.622
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodBreak3
+    clip: {fileID: 8300000, guid: 90ee1ade44d2d914fa9c2af86c2947a3, type: 3}
+    volume: 0.519
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodBreak4
+    clip: {fileID: 8300000, guid: 297e71c5647a1bd459c87a1b7786e79a, type: 3}
+    volume: 0.525
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodBreak5
+    clip: {fileID: 8300000, guid: 810cc075bfdf8cc40be8dd6ed5024529, type: 3}
+    volume: 0.494
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodCrack1
+    clip: {fileID: 8300000, guid: 4cc0fad72ee57814491466b56f6fcd55, type: 3}
+    volume: 0.5
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: WoodCrack2
+    clip: {fileID: 8300000, guid: caf1e1bd8b179254e953bac1377a32fd, type: 3}
+    volume: 0.519
+    volumeVariance: 0.5
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: BGM1
+    clip: {fileID: 8300000, guid: 398794afdf046514d91a0a4fa9e6df8c, type: 3}
+    volume: 0.3
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 24324684, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: BGM2
+    clip: {fileID: 8300000, guid: 950ae683ebee39a45910e98d68650297, type: 3}
+    volume: 0.3
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 24324684, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: EnemyAlert
+    clip: {fileID: 8300000, guid: 486745ca04221b14e8b87ac34ecab524, type: 3}
+    volume: 0.882
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: NextButton
+    clip: {fileID: 8300000, guid: 6414380ab3140d345beabf89be99dbd0, type: 3}
+    volume: 1
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: ShopButton
+    clip: {fileID: 8300000, guid: 7c76f1c67135ff04086fc30174508081, type: 3}
+    volume: 0.882
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: PlayButton
+    clip: {fileID: 8300000, guid: 08d2b473014bdac41ae8452bbbc7086e, type: 3}
+    volume: 1
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: DeathStinger
+    clip: {fileID: 8300000, guid: 7c5403dc7179d7c448b6712f31bc0e86, type: 3}
+    volume: 0.882
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: ContinueStinger
+    clip: {fileID: 8300000, guid: 5fd0b9ec4e6a0ae46a6ab1ad34ef9071, type: 3}
+    volume: 0.882
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: SkipStinger
+    clip: {fileID: 8300000, guid: be40d1ec9a98ebb46bea37c5a63abb63, type: 3}
+    volume: 0.882
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: LevelUpStinger
+    clip: {fileID: 8300000, guid: a13d2cdf183f1c145b4a8aba5f3ce306, type: 3}
+    volume: 0.882
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+  - name: GoodStinger
+    clip: {fileID: 8300000, guid: f25d7273af2be514baf729d8112f22a3, type: 3}
+    volume: 0.882
+    volumeVariance: 0.463
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+    source: {fileID: 0}
+    fadingIn: 0
+    fadingOut: 0
+--- !u!114 &1877728455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 1480671175b074942a8728c2b4a44796, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210407702775432796}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DeathStinger
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1877728456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: cff6e894d31f84e40b683904d905e781, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210407702775432796}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LevelUpStinger
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1877728457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 23d8645894d44584588ed5bb2f399be1, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210407702775432796}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ContinueStinger
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1877728458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 85198afbf48d29748a99b5b5c4e1712c, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210407702775432796}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SkipStinger
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1877728459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 78a5f65722917cb4dbf7f13e477b801f, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210407702775432796}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GoodStinger
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1577380695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210407702775432794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 89e74f0e2f4404a299cb10b887cc81c6, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 210407702775432796}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ContinueStinger
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba81bf194eca444185cb02ecc55d562, type: 3}
+  m_Name: KungFu1_IronFistCody_EG_Level_Boss
+  m_EditorClassIdentifier: 
+  groupName: Boss Ironfist Cody
+  Enemies:
+  - {fileID: 836264147262791555, guid: 593f21a42c6a841bfb98f3b7a0376f58, type: 3}
+  - {fileID: 7830325732210909417, guid: f488ddc61661d4d78b5a1240588742d6, type: 3}
+  - {fileID: 8409813178369717527, guid: 34395a44e82bc4e67a29f0786cac15b2, type: 3}
+  - {fileID: 8178969243954762291, guid: 53764b6b540c949bc90368389c096275, type: 3}
+  - {fileID: 6752421816312559875, guid: 52a5d50d0e4a34982a70162b9e939c5e, type: 3}
+  maxDifficultyTime: 0.5

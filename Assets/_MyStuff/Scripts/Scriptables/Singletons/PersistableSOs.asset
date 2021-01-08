@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a9c38ce235e3c4abeb6b18c98afe4c, type: 3}
+  m_Name: PersistableSOs
+  m_EditorClassIdentifier: 
+  persisterName: MainData
+  objectsToPersist:
+  - {fileID: 11400000, guid: 2cb5c1ede509e3440a7014aaff09106b, type: 2}
+  - {fileID: 11400000, guid: 571d25821b4e85849994718cfc0bb1b9, type: 2}
+  - {fileID: 11400000, guid: 1bc06553dc36b2e49a531fdf83fcf75c, type: 2}
+  - {fileID: 11400000, guid: 416844d8d7dfb0e478aa9f5e8e18deeb, type: 2}

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d08eb93209b4535bbd8bf9dc486eae, type: 3}
+  m_Name: Character1
+  m_EditorClassIdentifier: 
+  inGamePlayer: {fileID: 257, guid: 08d6fee1dd04998409d035f674c94aa6, type: 3}
+  spawnPoint: {fileID: 11400000, guid: d7c7bf60c59c84548a3dd0c5e467701a, type: 2}
+  menuPlayer: {fileID: 100006, guid: 86c7cdeb9caab9f45b0305c78e62ecc0, type: 3}

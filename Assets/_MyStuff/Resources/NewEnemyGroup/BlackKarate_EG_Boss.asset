@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba81bf194eca444185cb02ecc55d562, type: 3}
+  m_Name: BlackKarate_EG_Boss
+  m_EditorClassIdentifier: 
+  groupName: Boss Katsuo
+  Enemies:
+  - {fileID: 2655456224138428812, guid: 4a85b931472c84e08b91b627abb1154a, type: 3}
+  - {fileID: 8886347305215326700, guid: cdb7f911c4ae8431390546b53191a367, type: 3}
+  - {fileID: 6212034978926897643, guid: 4065adad9c43b4a3780c847514aa467c, type: 3}
+  - {fileID: 1565510355320451002, guid: 03da829005e9c4bf1af7da8fc3bf8830, type: 3}
+  - {fileID: 8355643470568221254, guid: b04075a7d3fc34236afe1ad5d3a1ea1e, type: 3}
+  - {fileID: 325281981203499747, guid: a430825f04e974324b07df8b5ec6e23a, type: 3}
+  maxDifficultyTime: 0.5

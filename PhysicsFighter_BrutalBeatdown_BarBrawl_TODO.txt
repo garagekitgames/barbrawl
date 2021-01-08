@@ -1,0 +1,446 @@
+To DO : 
+1. Ads integration : 
+display ad in frequent intervals, like once every 2 rounds, 
+rewarded video ad : 
+on death screen display Button : continue coins-200, ads-coins+50, get more coins -> opens the shop panel to purchase coins or watch ads to get free coins 
+2. IAP : Shop panel to purchase coin packs; research various coin packs, -> remove ads, unlock all, coin sack, coin barrel etc, double coins
+3. Some characters can only be purchased by IAP, 
+4. Characters
+5. Piano should have collider
+6. Audio manager : Brackeys
+7. UI particle effect for coin collect text increase
+8. animation and ui effect play when character is purchased
+9. Player stats display ?
+10. Splash screen logo
+11. Game logo and icon and name art
+12. Check out how to fill out the form and SEO
+13. Funny dance animations
+14. funnier sounds
+15. Louder swoosh sounds
+16. hurt animation, when enemy is hit, he should place hands to the spot where he was hit, and wiggle on the ground
+17. Facial animation
+18. Bouncy material for head and butt
+19. Different hit particle effect, 
+20. Particle effect for ground hit and drag
+21. furniture break audio, glass break audio, etc
+22. Mini loading screen when restart is clicked
+23. Loading screen
+24. display random tips on loading screen 
+25. Coin collect sound 
+26. Time slow mode, accumulate damage to enable the time slow button, when the damage eter is full time slow button will be enabled, clickin on that would put you in time slow for 10 sec, attacks are powerful, more enemies come during that time
+27. add grabbing enemy 
+28. Enemy types, weak, medium, strong, based on health and attack power, grabbing enemy, slow strong, fast weak, 
+29. characters : 
+30. health bars and pow bars and adrenaline damage meter
+31. Create Facebook page, instagram page, and youtube channel
+32. Add audience crowd and chants
+
+Playstore requirements :
+1. short description
+2. full description
+3. screenshots : several
+4. Hi res icon : man yelling 512 x 512 32 bit png with alpha
+5. Feature Graphic : 1024 w x 500 h 24 bit png or jpg no alpha
+6. promo graphic : 180w x 120 h  24 bit png or jpg no alpha
+7. TV banner : 1280w x 720h no alpha
+8. Daydream : 360 stereoscopic image : 4096w x 4096h no alpha
+9. Promo youtube video 
+10. need a website for company 
+
+Characters :
+1. cowboy
+2. bruce lee
+3. Mike tyson
+4. Arnold body builder, with dumbell hands
+5. cosplayer batman, spiderman
+6. hulk like guy
+7. Jedi 
+8. Bear
+9. Gorilla
+10. Lumber Jack
+11. Negan baseball
+12. Jason, machete
+13. Samurai, sword dual
+14. Kill bill, sword 
+15. UFC fighter connor mcgregor
+16. Bob Ross, paint brush
+17. Michael Jackson, kick
+18. Knight with sword
+19. Caveman with club
+20. ipman
+21. Jackie Chan cowboy 
+22. Jean claude van dam blood sport
+23. Saiyan
+24. Luffy
+25. stephen chow kung fu hustle
+26. jetli once upon a time in china
+27. samo hung
+28. rocky
+29. wolverine fat cosplayer
+30. Wrestler, luchador
+31. Generic pro wrestler
+
+
+1. Particle effect(charge) and strong sound effect(shring ? ) for wind up strong telegraphs for enemy attack
+a. cfx_magical_source - charge 
+b. cfx_magic_poof - disable enemy
+c. cfx2_pickupdiamond2 - alert over enemy head 
+d. cfx2_pickupheart - revive
+e. cfx3_hit_electric_a_ground - hit effect 
+f. cfx3_hit_electric_c_air - hit effect 
+g. cfx3_magicaura_b_runic - respawn
+h. cfx3_resurrectionlight_circle - respawn
+i. cfx4 aura bubble c - charge
+j. cfx4 disruptive force - charge
+
+2. Tutorial, at the start of game when no input is received , display tap on screen to attack, when player taps, display, tap and hold to charge your attack tap+hold and then release for stronger attack 
+** - go to options to set show tutorial on or off - done*
+** Random Tip Should have several tips and it should pick a random one each time, with a random number - done
+Tap and hold on the highlighted area to aim 
+The arrow represents the direction and range of your attack
+Hold longer to increase your attack's range, accuracy and power 
+Release to attack, when the enemy is within the arrow.
+
+
+3. level system : at the end of each level or death, show revive button - summary panel
+4. Death Panel - summary panel
+5. Shop Panel - 
+6. Watch Ads
+7. IAP 
+8. google game services, cloud save, acheivements, leader boards etc.
+9. company Logo, Game Logo, 
+10. Asian music - BGM menu, BGM game, button clicks, gong sound, woosh, punch kick 
+11. Facial animation - imp
+12. bouncy material for characters
+13. Ground hit sound effect, on pillars too , with particle effect
+14. Set dressing , with breakable objects - done
+15. Loading screen, between scenes
+16. add more enemy characters 
+17. music and sfx
+18. enemy burn or electrocute particle based on player charge particle
+
+
+1. Highlight that coins are rewarded after level up, // Add glow image 
+polish level up panel, add glow, show + x coins 
+polish coins value, jump and glow when coins are added // no need
+
+- Done 
+
+2. Sounds : 
+
+Launch BGM, + 1
+ menu BGM,
+ game BGM,
+ next button sfx, +1
+ shop button sfx, +1
+ play Button sfx, +1
+ generic clicks sfx, +1
+ death stinger, +1
+ continue stinger, +1
+ skip stinger, +1
+ after death bgm, +1
+ level up stinger, +1
+ Pause Menu BGM +1
+ - Sound and UI buttons in main menu + shop Panel for coins 
+
+ - Done 
+
+3. Ads integration, rewarded ads integration, if ads available show the continue, else go to summary panel directly, if ad available show double coins, or else show unlock character, or get more coins / get free coins + Privacy Policy 
+
+Admob App ID : 
+ca-app-pub-7447891677869798~4204554574
+
+Banner ID : ca-app-pub-7447891677869798/1258471813
+
+Interstitial : ca-app-pub-7447891677869798/8262863860
+
+Rewarded : ca-app-pub-7447891677869798/1780972141
+
+Admob Test IDs : 
+B: ca-app-pub-3940256099942544/6300978111
+I : ca-app-pub-3940256099942544/1033173712
+Re : ca-app-pub-3940256099942544/5224354917
+
+issue : for 200 coins button fix 
+fix skip close button
+Free coins button remove old, fix new 
+
+Fixes : 
+
+Shadow fix 
+
+2. Remove Banner Ad 
+3. When settings is displayed, pause should not be able to be clicked 
+4. Data privacy not visible 
+ NullReferenceException: Object reference not set to an instance of an object.
+05-12 23:57:05.151 23722 23761 E Unity   :   at EasyMobile.Demo.PrivacyDemo.ConstructConsentDialog (System.Boolean localize) [0x00000] in <00000000000000000000000000000000>:0
+05-12 23:57:05.151 23722 23761 E Unity   :   at EasyMobile.Demo.PrivacyDemo.ShowDemoConsentDialog (System.Boolean localize, System.Boolean dismissible) [0x00000] in <00000000000000000000000000000000>:0
+05-12 23:57:05.151 23722 23761 E Unity   :   at UnityEngine.Events.UnityEvent.Invoke () [0x00000] in <00000000000000000000000000000000>:0
+05-12 23:57:05.151 23722 23761 E Unity   :   at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00000] in <00000000000000000000000000000000>:0
+05-12 23:57:05.151 23722 23761 E Unity   :   at UnityEngine.EventSystems.StandaloneInputModule.ProcessTouchPress (UnityEngine.EventSystems.PointerEventData pointerEvent, System.Boolean pressed, System.Boolean released) [0x00000] in <00000000000000000000000000000000>:0
+05-12 23:57:05.151 23722 23761 E Unity   :   at UnityEngine.EventSystems.StandaloneInputModule.ProcessTouchEvents ()
+
+- Done 
+
+UNITY_POST_PROCESSING_STACK_V2;CROSS_PLATFORM_INPUT;MOBILE_INPUT;dUI_DoozyUI;dUI_UseOrientationManager;EASY_MOBILE;EASY_MOBILE_PRO;dUI_TextMeshPro;EM_ADMOB;UNITY_ADS
+
+Ads issue : 
+05-14 13:28:10.203 26710 26732 I Unity   : Easy Mobile runtime has been initialized.
+05-14 13:28:10.276 26710 26732 I Unity   : Level Loaded
+05-14 13:28:10.276 26710 26732 I Unity   : Preloader
+05-14 13:28:10.277 26710 26732 I Unity   : 2
+05-14 13:28:10.598 26710 26732 I Unity   : AdMob client has been initialized.
+05-14 13:28:10.599 26710 26732 I Unity   : UnityAds client has been initialized.
+05-14 13:28:10.622 26710 26732 I Unity   : Please initialize the UnityAds client first.
+05-14 13:28:10.623 26710 26732 I Unity   : Please initialize the UnityAds client first.
+
+
+4. Shop panel, no ads, coins packages, unlock all characters, 
+
+5. google game services, leaderboards, achievements
+
+6. Comppany Logo, game logo - done
+
+8. level up coin particle effect - no need 
+
+9. fix coin collection - done
+
+10. Fix Post death best score text - done
+
+11. post death level completwe percent should pop up more - done
+
+12. reduce the start attack time, and increase the attack duration - done
+
+13. character creator and enemy creator fix
+
+14. Fix Character Buy screen - done
+
+15. Options menu - Done
+
+16. Quitting application 
+
+7. Add more characters 
+
+To DO : 
+
+
+
+1. IAP : Shop panel, no ads, coins packages, unlock all characters, 
+
+2. google game services, leaderboards, achievements, cloud save
+
+47:B3:D4:35:C1:DB:86:2C:E6:EA:F7:D6:46:29:59:61:66:3F:34:95
+
+B2:B5:C2:83:5D:2F:36:D3:E3:E8:FF:EC:51:39:20:6E:BB:7F:A4:74
+
+3. character creator and enemy creator fix
+
+4. Quitting application gracefully
+
+5. Add more characters 
+
+6. Share pic, gif
+
+7. Native Notifications
+
+
+To DO : Prioritized
+
+1. Fix character life - done
+
+2. fix blood splatter showing through ui - done
+
+3. fix charge effect, remove flash and sparks - done
+
+4. disable watch ads button in shop if no ads are available - done
+
+11. on reward receive, show pop up , and make the player click it, to receive the award - done 
+
+6. Share pic, gif - done
+
+9. Game ART, Logo, Shaders 
+
+13. Create better icon, create better art 
+
+16. screenshots, title card, video trailer, gifs, 
+
+14. Show a prescene before main menu 
+
+5. increase cost of characters
+
+6. new environment for each characters
+
+4. Quitting application gracefully - done 
+
+1. IAP : Shop panel, no ads, coins packages, unlock all characters, - done
+
+3. character creator and enemy creator fix - done
+
+5. Add more characters - done
+
+
+
+2. google game services, leaderboards, achievements, -done* cloud save
+
+7. Native Notifications, Rate Button - done
+
+8. Daily rewards 
+
+
+
+10. On Level up, show new enemy or something 
+
+
+
+
+
+
+
+15. change home button to player switch button - done
+
+
+12. Marketting : 
+
+
+17. create a reddit post on Made with unity, unity related, indie game related, causal game, fighting game etc
+
+18. create post on funny ragdoll game reddit
+
+19. Create post on Forums, touch arcade, mobile game dev forums etc
+
+20. Contact small mobile game youtubers and send the game link 
+
+21. Create a website, and setup for / mailing list
+
+22. post youtube videos of funny game play, and dev log every week
+
+23. Facebook post, boost
+
+24. Instagram post
+
+25. Twitter post 
+
+
+
+
+
+Bugs : 
+
+1. remove fps counter - done
+
+2. random tip overlaps with tip header - done
+
+3. remove disclaimer from privacy consent - done
+
+4. Reduce Player cost - done
+
+5. Fix Easy Mobile Unity Ads , use unity interstitial ads instead of google admob - done
+
+6. Increase score by 10% per kill based on level or limit the max to 50 - done 
+
+7. Fix electric sound audio - done 
+
+8. Reduce difficulty - done 
+
+
+1. Icon Design 
+2. Character - shader, 
+3. Enemy difficulty, - 
+4. Life bar
+5. 2-4 
+6. Character stats screen - social features, leaderboard 
+7. Pre scenes
+8. 
+
+
+Summary Panel : approach 1
+
+static
+2. high score top left 
+3. total coins top right
+dynamic
+1. your score main panel - display new highscore if the player had beaten high score 
+2. Display level bar, animation, add score value to level up bar, if level up occurs, display particle effect and animate adding bonus to coins 
+
+3. Display  max combo + bonus coins for max combo, add coins 
+
+4. coins earned this round 1. coins collected, 2. coins for level up, 3. coins for max combo + button to double coins 
+
+
+Approach 2 
+In game levels
+Levels are different cosmetically 
+Change lighting, enemy material color for gi or clothes, or different Enemies 
+
+levels are based on score / kills
+kills would be fair
+
+round starts
+Display Level x - current level 
+
+enemies come, level up bar is shown, 
+level up bar - left number - current level, right number next level, slider current exp / exp left 
+
+on level up, 
+Pause2, hide pause button
+Play screen particle effect
+spawn 100 coins 
+the difficulty is reset to zero, 
+Display Level 5
+
+
+Variables : 
+bool highscore beaten this round 
+int coins collected 
+max combo
+
+
+Physics based ragdoll fighting arcade game
+
+video : 
+0:18 to 0:40
+0:45 to 0:50
+1:42 to 2:10
+4:55 to 5:30
+6:27 to 6: 40
+6:55 to 6:57 table flip
+7:04 to 7:06 
+
+
+char input-0
+char thinker-0
+bp holder-0
+legs simple1-
+char basic ai-0
+char limp setting-0
+diable after x sec-0
+char ui -
+char hit miss track 0 
+char health-0
+reset char root-0
+char hit particle effect-0
+navmeshagent-0
+char navmeshtarget- 0
+damage effect -0
+
+
+Community :
+Discord
+discordbots.org
+google forms for sign up mailing list
+mailchimp for emailing 
+
+Social : 
+ #pixelart #1bit #indiedev #gamedev  #mobilegame #AndroidGame #ドット絵 #aseprite  #rpg #clicker #casual #adventure #shooter #shmup #madewithfusion #swordshot
+ 
+Dev blog, vlog etc, on youtube
+regular/consistent streaming on twitch or youtube
+funny 10 min video on youtube
+polish stage vandha odane, prepare a trailer, 
+prepare presskit, use google press kit
+create a website
+google forms for sign up mailing list
+mailchimp for emailing 
+Contact press, game blogs, youtuber etc
+ 
+ 

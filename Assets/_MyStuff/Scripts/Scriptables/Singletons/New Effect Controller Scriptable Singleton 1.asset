@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fb7de0e6d39ca4582e1f987c91885c, type: 3}
+  m_Name: New Effect Controller Scriptable Singleton 1
+  m_EditorClassIdentifier: 
+  smokePuff: {fileID: 0}
+  bloodPrefab: {fileID: 0}
+  clips:
+  - {fileID: 8300000, guid: 4ce82f21c673340469eb37af3a2bef34, type: 3}
+  - {fileID: 8300000, guid: bfd78dbd1e9dff144a0db5f0d91a4334, type: 3}
+  - {fileID: 8300000, guid: a8456928234af084f87aa48bb7404273, type: 3}
+  - {fileID: 8300000, guid: 64a6ce681c3cde444b48b5d05ddbe558, type: 3}
+  - {fileID: 8300000, guid: 4d1d4928837d69b41be5b255fff9a78a, type: 3}
+  - {fileID: 8300000, guid: 6bc579f850509794fada76c04484cb06, type: 3}
+  - {fileID: 8300000, guid: c3789bc21c8aaa145ad6a364019b29be, type: 3}
+  - {fileID: 8300000, guid: 4b92fa5da14509e49b0c4f02a84e2204, type: 3}
+  - {fileID: 8300000, guid: ec9515653ac87ea46857f2762c03d13f, type: 3}
+  - {fileID: 8300000, guid: f3eb9b1dc67422c46b8c117fc5939a3f, type: 3}
+  - {fileID: 8300000, guid: 25c6dcae7c4a56d46ad58b591bc2458d, type: 3}
+  - {fileID: 8300000, guid: 3e13c1e2c9ba7ef40bd0a305fffce215, type: 3}
+  - {fileID: 8300000, guid: a072c42d3a800ff478bcaf0b2e1d683f, type: 3}
+  - {fileID: 8300000, guid: c13b52efec7877746b70e2b7c49f8e2c, type: 3}
+  - {fileID: 8300000, guid: 5b56d7f46633987419b89bebfd5f0317, type: 3}
+  - {fileID: 8300000, guid: 2ecdde633114e17489a150e1f866378c, type: 3}
+  - {fileID: 8300000, guid: 39f39a8f68c14f9498acc85b56f34dea, type: 3}
+  - {fileID: 8300000, guid: 6d2bfb5fcf6bb044bb0c4af815d81751, type: 3}
+  - {fileID: 8300000, guid: 7aff46f51b9e9f24da3f01c2d3523190, type: 3}
+  - {fileID: 8300000, guid: c983cf200899d9748bddac8c915c420a, type: 3}
+  - {fileID: 8300000, guid: d9a74a650629c644fb1b418fee6f30b8, type: 3}
+  - {fileID: 8300000, guid: e13e6f360e52b544bbb077a4025bf45c, type: 3}
+  - {fileID: 8300000, guid: 45c60026787dd804dbad96d6d7a4be5f, type: 3}
+  - {fileID: 8300000, guid: 9a47570ca061f33419a9218dcfed6634, type: 3}
+  - {fileID: 8300000, guid: c68eba0981dbaef44ad7c01050925a93, type: 3}
+  - {fileID: 8300000, guid: cdb8cab0f9b67084aa0bc1f2977a0230, type: 3}
+  - {fileID: 8300000, guid: d2f28ebc994aef34fa860937f963115f, type: 3}
+  - {fileID: 8300000, guid: c64a333bd33aa0b40b745d067ba69881, type: 3}
+  - {fileID: 8300000, guid: 4d7340e00099cd043868d501478631a8, type: 3}
+  - {fileID: 8300000, guid: f16a68010462b334e9c485b153a6fa4c, type: 3}
+  pcshshClips:
+  - {fileID: 8300000, guid: 21fbc34c552a15e4f9ccb97212c74a56, type: 3}
+  - {fileID: 8300000, guid: 4640c8002e924d04abd1c1d6b3a533e4, type: 3}
+  - {fileID: 8300000, guid: 132a9ce801202024bad515211da60250, type: 3}
+  - {fileID: 8300000, guid: 8a2b4d0d31545484684e25d995104c92, type: 3}
+  - {fileID: 8300000, guid: 968de04f5b26cf149875dca68a8e48be, type: 3}
+  - {fileID: 8300000, guid: 68789bb10d5330d4a843e6cfc47698ad, type: 3}
+  - {fileID: 8300000, guid: 81bdbb03e93178945b34c9df71f21f4e, type: 3}
+  - {fileID: 8300000, guid: 4caabc0c7ccfd314a9230545bec583b9, type: 3}
+  - {fileID: 8300000, guid: 50706b4f0418d1c42aa4b250ff31d6af, type: 3}
+  - {fileID: 8300000, guid: f56b9866addfa9241a51314953d893c5, type: 3}
+  - {fileID: 8300000, guid: cf3be0e8b4a111f49bfba25fd4b79adf, type: 3}
+  wooshclips:
+  - {fileID: 8300000, guid: ff370ada92f6dc843b2321692b31b5e1, type: 3}
+  - {fileID: 8300000, guid: 585f45766efa4014da404ad90f0b7414, type: 3}
+  - {fileID: 8300000, guid: 997410dfe54eeb54691d56e50d83ba8f, type: 3}
+  - {fileID: 8300000, guid: 8f9c508a663a0f1409c2a768302f501e, type: 3}
+  - {fileID: 8300000, guid: e43cea87d2c8baf47858d2421a980fe6, type: 3}
+  - {fileID: 8300000, guid: b8e30486c094d71428ba18a482334bad, type: 3}
+  - {fileID: 8300000, guid: 4b2b6811dd3852a419d83f0cdad8a303, type: 3}
+  crunchClips:
+  - {fileID: 8300000, guid: 3372d50c43697204a9ac884350dbe8fe, type: 3}
+  - {fileID: 8300000, guid: 2714fedd251c9124fae57e7efb3ae987, type: 3}
+  - {fileID: 8300000, guid: b969d6d3e3ca1574baada908cfcfdf8a, type: 3}
+  - {fileID: 8300000, guid: 7a0a3fabe458d184e81a7b052a0dafb9, type: 3}
+  - {fileID: 8300000, guid: c6c2bb01f0a9d4c4ab380a3640fe0a8f, type: 3}
+  - {fileID: 8300000, guid: bdaf5122de78d2041bc83836c752e0cc, type: 3}
+  pickupClip: []
+  minVolume: 0.01
+  maxVolume: 1
+  minVelocity: 4
+  maxVelocity: 100
+  minImpactDelay: 0.15
+  pitch: 1
+  mixerGroup: {fileID: 24301952, guid: 29b25edf9541fdf49ac3f4f6909c627f, type: 2}
+  camTransform: {fileID: 0}
+  mfCam: {fileID: 0}
+  f3dCam: {fileID: 0}
+  shakeAmount: 0.7
+  Magnitude: 2
+  Roughness: 10
+  FadeOutTime: 5

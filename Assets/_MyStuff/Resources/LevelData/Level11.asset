@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bec3bee11636d449afcf980974fcaef, type: 3}
+  m_Name: Level11
+  m_EditorClassIdentifier: 
+  Enemies:
+  - {fileID: 5824241318577913419, guid: ecf1e40cb37e3b7438359f7f08e78cc7, type: 3}
+  - {fileID: 4767858052693082872, guid: 7abb668921d5d7a458515ca64c19a56f, type: 3}
+  Player: {fileID: 1752364337578306, guid: 3bcfc99a913a6da4bb05b4240bfb7427, type: 3}
+  spawnPoint: {fileID: 11400000, guid: d7c7bf60c59c84548a3dd0c5e467701a, type: 2}

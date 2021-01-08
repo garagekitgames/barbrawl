@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5b28bb3eae8521498e67eb2f29fef11, type: 3}
+  m_Name: BasicRightPunchOverHead
+  m_EditorClassIdentifier: 
+  attackType: {fileID: 11400000, guid: 947c366cdff3d394f9c0a6648e76a598, type: 2}
+  windupAttackPoses:
+  - {fileID: 11400000, guid: 000877e11afd94e4da003b5c8bcf8065, type: 2}
+  - {fileID: 11400000, guid: 5d346f042b110e846a685c6855fb8a2a, type: 2}
+  attackingAttackPoses:
+  - {fileID: 11400000, guid: af13618282c4c7d4297ce14849536f6b, type: 2}
+  - {fileID: 11400000, guid: 9bddb5d0627645d4e939e5f44d77bc1d, type: 2}
+  afterAttackPoses:
+  - {fileID: 11400000, guid: e0abbb87a847f794791c8f9071959829, type: 2}
+  - {fileID: 11400000, guid: e436d2a0b390b774baad08a2ebbfd615, type: 2}
+  attackForceRatio:
+  - {fileID: 11400000, guid: d828c429eafd99d4fb3fa2e780330008, type: 2}
+  - {fileID: 11400000, guid: 60d0e899c2f29d5499fba3d9c4906701, type: 2}
+  attackForceApplyPercent: 1
+  attackPowerIncreaseRate: 2.5
+  accuracyReduceFactor: 0.1
+  attackSpeed: 0.2
+  startAttackPower: 1000
+  maxAttackPower: 2000
+  minAttackPower: 1000
+  chestPart: {fileID: 11400000, guid: d94c683725b0c104bbf80698b85bbd23, type: 2}
+  bodyPartToHitWith: {fileID: 11400000, guid: 3a4e7367dc3c8a149975f0ee90071884, type: 2}
+  windupHipBodyPart: {fileID: 11400000, guid: 20ee43b86dc57b44dac3640b44a4ae64, type: 2}
+  windUpHipForward: 20
+  jumpOnWindUp: 1
+  jumpOnWindupForce: {x: 0, y: 1000, z: 0}

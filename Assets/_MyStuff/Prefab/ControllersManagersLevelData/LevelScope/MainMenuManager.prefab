@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4672156622096360547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4672156622096360549}
+  - component: {fileID: 4672156622096360548}
+  - component: {fileID: 4672156622096360551}
+  - component: {fileID: 4672156622096360550}
+  m_Layer: 0
+  m_Name: MainMenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4672156622096360549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672156622096360547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4672156622096360548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672156622096360547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb5bff58d40f5b4e970553235da82f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 11400000, guid: 88f04cb06d711234fb11e90d11c3bf40, type: 2}
+  - {fileID: 11400000, guid: 33488f316e7463941aaf7d5d39a27141, type: 2}
+  - {fileID: 11400000, guid: 6309aead46341f742a287404fa055366, type: 2}
+  - {fileID: 11400000, guid: 5b73777c6e325a54996ff16dea241c2f, type: 2}
+  - {fileID: 11400000, guid: 84fcbb0a9b65407418340b863989b87b, type: 2}
+  - {fileID: 11400000, guid: 5a7bcb03595a7ae44ada9f1ce70d5db5, type: 2}
+  - {fileID: 11400000, guid: f7b590efd335fd343b6a2a66ee810ee7, type: 2}
+  - {fileID: 11400000, guid: 72d1a15a52218f544b2c85f4c54aa3c2, type: 2}
+  - {fileID: 11400000, guid: 229df901de23f184899e8695030c93cd, type: 2}
+  - {fileID: 11400000, guid: a97cfc4839dde475e96f82070b9f41d2, type: 2}
+  - {fileID: 11400000, guid: 50a8d2da6603040faafe5c317c2d6550, type: 2}
+  - {fileID: 11400000, guid: 6aa9598452452457e870a40d22ae6ebc, type: 2}
+  - {fileID: 11400000, guid: 0f16049a389e046b38d6e4872533cb40, type: 2}
+  - {fileID: 11400000, guid: 448c8e19814194f00b824ff4d8d6b983, type: 2}
+  - {fileID: 11400000, guid: d45cd6381b7ba4b90a7ae90852401876, type: 2}
+  levelData: []
+  levelCharacters: []
+  levelLocks: 
+  currentLevel: {fileID: 11400000, guid: f4d4888685cb59c468e976616603815d, type: 2}
+  selectedIndex: {fileID: 11400000, guid: 779e4f3dc75e0b5498b223d4771e87d7, type: 2}
+  distanceBetweenCharacter: 8
+  radius: 16
+  prefab: {fileID: 0}
+  lookingAtCamera: 0
+  mainCam: {fileID: 0}
+  lookAtPart: {fileID: 11400000, guid: 20ee43b86dc57b44dac3640b44a4ae64, type: 2}
+  playButton: {fileID: 0}
+  buyButton: {fileID: 0}
+  lockImage: {fileID: 0}
+  lockSprite: {fileID: 21300000, guid: 301b505f9ee735f44ad01624242cf46d, type: 3}
+  unlockSprite: {fileID: 21300000, guid: e54d0f4a8842f2746ba0def06e265868, type: 3}
+  cashValue: {fileID: 11400000, guid: 1bc06553dc36b2e49a531fdf83fcf75c, type: 2}
+  updateCashUI:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fa65010ff6ce8da4f97a26a897cd4bff, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  notEnoughCash:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 845cd0b5b76361d409c085de5676b7c4, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  buttonCashValueUI: {fileID: 0}
+  healthSlider: {fileID: 0}
+  powerSlider: {fileID: 0}
+  characterName: {fileID: 0}
+  healthLevel: {fileID: 0}
+  powerLevel: {fileID: 0}
+  statLevelPrefix: 'Lvl '
+--- !u!114 &4672156622096360551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672156622096360547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 5a260e7a054401641aad6bb4e1703553, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4672156622096360548}
+        m_MethodName: OnPlayClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4672156622096360550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672156622096360547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a055b694402bd469a86915f1319e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: a37ba8311bf91444396d372536efa22b, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4672156622096360548}
+        m_MethodName: AttemptBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

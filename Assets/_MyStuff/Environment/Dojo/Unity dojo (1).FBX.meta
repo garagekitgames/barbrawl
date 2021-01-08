@@ -1,0 +1,809 @@
+fileFormatVersion: 2
+guid: eafe6c07cba44e14686c072fc67411b7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Beam
+    100002: Dark element_00
+    100004: Dark element_01
+    100006: Dark element_02
+    100008: Dark element_03
+    100010: Dark element_04
+    100012: Dark element_05
+    100014: Dark element_06
+    100016: Dark element_07
+    100018: Dark element_08
+    100020: Dark element_09
+    100022: Dark element_10
+    100024: Dark element_11
+    100026: Dark element_12
+    100028: Dark element_13
+    100030: Dark element_14
+    100032: Dark element_15
+    100034: Dark element_16
+    100036: Dark element_17
+    100038: Dark element_18
+    100040: Dark element_19
+    100042: Dark element_20
+    100044: Dark element_21
+    100046: Dark element_22
+    100048: Dark element_23
+    100050: Dark element_24
+    100052: Dark element_25
+    100054: Dark element_26
+    100056: Dark element_27
+    100058: Dark element_28
+    100060: Door
+    100062: Floor
+    100064: Light element_00
+    100066: Light element_01
+    100068: Light element_02
+    100070: Light element_03
+    100072: Light element_04
+    100074: Light element_05
+    100076: Light element_06
+    100078: Light element_07
+    100080: Light element_08
+    100082: Light element_09
+    100084: Light element_10
+    100086: Light element_11
+    100088: Light element_12
+    100090: Light element_13
+    100092: Light element_14
+    100094: Light element_15
+    100096: Light element_16
+    100098: Light element_17
+    100100: Light element_18
+    100102: Light element_19
+    100104: Light element_20
+    100106: Light element_21
+    100108: Light element_22
+    100110: Light element_23
+    100112: Light element_24
+    100114: Light element_25
+    100116: Light element_26
+    100118: Light element_27
+    100120: Light element_28
+    100122: Lightest element00
+    100124: Lightest element01
+    100126: Lightest element02
+    100128: Lightest element03
+    100130: Lightest element04
+    100132: Lightest element05
+    100134: Lightest element06
+    100136: Lightest element07
+    100138: Lightest element08
+    100140: Lightest element09
+    100142: Lightest element10
+    100144: Lightest element11
+    100146: Lightest element12
+    100148: Lightest element13
+    100150: Lightest element14
+    100152: Lightest element15
+    100154: Lightest element16
+    100156: Lightest element17
+    100158: Lightest element18
+    100160: Lightest element19
+    100162: Lightest element20
+    100164: Lightest element21
+    100166: Lightest element22
+    100168: Lightest element23
+    100170: Lightest element24
+    100172: Lightest element25
+    100174: Lightest element26
+    100176: Lightest element27
+    100178: Lightest element28
+    100180: Paraphet base_00
+    100182: Paraphet base_01
+    100184: Paraphet base_02
+    100186: Paraphet base_03
+    100188: Paraphet base_04
+    100190: Paraphet base_05
+    100192: Paraphet base_06
+    100194: Paraphet base_07
+    100196: Paraphet base_08
+    100198: Paraphet base_09
+    100200: Paraphet base_10
+    100202: Paraphet base_11
+    100204: Paraphet base_12
+    100206: Paraphet_00
+    100208: Paraphet_01
+    100210: Paraphet_02
+    100212: Paraphet_03
+    100214: Paraphet_04
+    100216: Paraphet_05
+    100218: Paraphet_06
+    100220: Paraphet_07
+    100222: Paraphet_08
+    100224: Paraphet_09
+    100226: Paraphet_10
+    100228: Paraphet_11
+    100230: Paraphet_12
+    100232: Pillar00
+    100234: Pillar01
+    100236: Pillar02
+    100238: Pillar03
+    100240: Pillar04
+    100242: Pillar05
+    100244: Pillar06
+    100246: Pillar07
+    100248: Pillar08
+    100250: Pillar09
+    100252: Pillar10
+    100254: Pillar11
+    100256: Pillar12
+    100258: Pillar13
+    100260: Pillar14
+    100262: Pillar15
+    100264: Pillar16
+    100266: Pillar17
+    100268: Pillar18
+    100270: Pillar19
+    100272: Platform
+    100274: Roof
+    100276: //RootNode
+    100278: wall back
+    100280: Wall front
+    100282: Wall left
+    100284: wall right
+    400000: Beam
+    400002: Dark element_00
+    400004: Dark element_01
+    400006: Dark element_02
+    400008: Dark element_03
+    400010: Dark element_04
+    400012: Dark element_05
+    400014: Dark element_06
+    400016: Dark element_07
+    400018: Dark element_08
+    400020: Dark element_09
+    400022: Dark element_10
+    400024: Dark element_11
+    400026: Dark element_12
+    400028: Dark element_13
+    400030: Dark element_14
+    400032: Dark element_15
+    400034: Dark element_16
+    400036: Dark element_17
+    400038: Dark element_18
+    400040: Dark element_19
+    400042: Dark element_20
+    400044: Dark element_21
+    400046: Dark element_22
+    400048: Dark element_23
+    400050: Dark element_24
+    400052: Dark element_25
+    400054: Dark element_26
+    400056: Dark element_27
+    400058: Dark element_28
+    400060: Door
+    400062: Floor
+    400064: Light element_00
+    400066: Light element_01
+    400068: Light element_02
+    400070: Light element_03
+    400072: Light element_04
+    400074: Light element_05
+    400076: Light element_06
+    400078: Light element_07
+    400080: Light element_08
+    400082: Light element_09
+    400084: Light element_10
+    400086: Light element_11
+    400088: Light element_12
+    400090: Light element_13
+    400092: Light element_14
+    400094: Light element_15
+    400096: Light element_16
+    400098: Light element_17
+    400100: Light element_18
+    400102: Light element_19
+    400104: Light element_20
+    400106: Light element_21
+    400108: Light element_22
+    400110: Light element_23
+    400112: Light element_24
+    400114: Light element_25
+    400116: Light element_26
+    400118: Light element_27
+    400120: Light element_28
+    400122: Lightest element00
+    400124: Lightest element01
+    400126: Lightest element02
+    400128: Lightest element03
+    400130: Lightest element04
+    400132: Lightest element05
+    400134: Lightest element06
+    400136: Lightest element07
+    400138: Lightest element08
+    400140: Lightest element09
+    400142: Lightest element10
+    400144: Lightest element11
+    400146: Lightest element12
+    400148: Lightest element13
+    400150: Lightest element14
+    400152: Lightest element15
+    400154: Lightest element16
+    400156: Lightest element17
+    400158: Lightest element18
+    400160: Lightest element19
+    400162: Lightest element20
+    400164: Lightest element21
+    400166: Lightest element22
+    400168: Lightest element23
+    400170: Lightest element24
+    400172: Lightest element25
+    400174: Lightest element26
+    400176: Lightest element27
+    400178: Lightest element28
+    400180: Paraphet base_00
+    400182: Paraphet base_01
+    400184: Paraphet base_02
+    400186: Paraphet base_03
+    400188: Paraphet base_04
+    400190: Paraphet base_05
+    400192: Paraphet base_06
+    400194: Paraphet base_07
+    400196: Paraphet base_08
+    400198: Paraphet base_09
+    400200: Paraphet base_10
+    400202: Paraphet base_11
+    400204: Paraphet base_12
+    400206: Paraphet_00
+    400208: Paraphet_01
+    400210: Paraphet_02
+    400212: Paraphet_03
+    400214: Paraphet_04
+    400216: Paraphet_05
+    400218: Paraphet_06
+    400220: Paraphet_07
+    400222: Paraphet_08
+    400224: Paraphet_09
+    400226: Paraphet_10
+    400228: Paraphet_11
+    400230: Paraphet_12
+    400232: Pillar00
+    400234: Pillar01
+    400236: Pillar02
+    400238: Pillar03
+    400240: Pillar04
+    400242: Pillar05
+    400244: Pillar06
+    400246: Pillar07
+    400248: Pillar08
+    400250: Pillar09
+    400252: Pillar10
+    400254: Pillar11
+    400256: Pillar12
+    400258: Pillar13
+    400260: Pillar14
+    400262: Pillar15
+    400264: Pillar16
+    400266: Pillar17
+    400268: Pillar18
+    400270: Pillar19
+    400272: Platform
+    400274: Roof
+    400276: //RootNode
+    400278: wall back
+    400280: Wall front
+    400282: Wall left
+    400284: wall right
+    2100000: 'Material #7'
+    2300000: Beam
+    2300002: Dark element_00
+    2300004: Dark element_01
+    2300006: Dark element_02
+    2300008: Dark element_03
+    2300010: Dark element_04
+    2300012: Dark element_05
+    2300014: Dark element_06
+    2300016: Dark element_07
+    2300018: Dark element_08
+    2300020: Dark element_09
+    2300022: Dark element_10
+    2300024: Dark element_11
+    2300026: Dark element_12
+    2300028: Dark element_13
+    2300030: Dark element_14
+    2300032: Dark element_15
+    2300034: Dark element_16
+    2300036: Dark element_17
+    2300038: Dark element_18
+    2300040: Dark element_19
+    2300042: Dark element_20
+    2300044: Dark element_21
+    2300046: Dark element_22
+    2300048: Dark element_23
+    2300050: Dark element_24
+    2300052: Dark element_25
+    2300054: Dark element_26
+    2300056: Dark element_27
+    2300058: Dark element_28
+    2300060: Door
+    2300062: Floor
+    2300064: Light element_00
+    2300066: Light element_01
+    2300068: Light element_02
+    2300070: Light element_03
+    2300072: Light element_04
+    2300074: Light element_05
+    2300076: Light element_06
+    2300078: Light element_07
+    2300080: Light element_08
+    2300082: Light element_09
+    2300084: Light element_10
+    2300086: Light element_11
+    2300088: Light element_12
+    2300090: Light element_13
+    2300092: Light element_14
+    2300094: Light element_15
+    2300096: Light element_16
+    2300098: Light element_17
+    2300100: Light element_18
+    2300102: Light element_19
+    2300104: Light element_20
+    2300106: Light element_21
+    2300108: Light element_22
+    2300110: Light element_23
+    2300112: Light element_24
+    2300114: Light element_25
+    2300116: Light element_26
+    2300118: Light element_27
+    2300120: Light element_28
+    2300122: Lightest element00
+    2300124: Lightest element01
+    2300126: Lightest element02
+    2300128: Lightest element03
+    2300130: Lightest element04
+    2300132: Lightest element05
+    2300134: Lightest element06
+    2300136: Lightest element07
+    2300138: Lightest element08
+    2300140: Lightest element09
+    2300142: Lightest element10
+    2300144: Lightest element11
+    2300146: Lightest element12
+    2300148: Lightest element13
+    2300150: Lightest element14
+    2300152: Lightest element15
+    2300154: Lightest element16
+    2300156: Lightest element17
+    2300158: Lightest element18
+    2300160: Lightest element19
+    2300162: Lightest element20
+    2300164: Lightest element21
+    2300166: Lightest element22
+    2300168: Lightest element23
+    2300170: Lightest element24
+    2300172: Lightest element25
+    2300174: Lightest element26
+    2300176: Lightest element27
+    2300178: Lightest element28
+    2300180: Paraphet base_00
+    2300182: Paraphet base_01
+    2300184: Paraphet base_02
+    2300186: Paraphet base_03
+    2300188: Paraphet base_04
+    2300190: Paraphet base_05
+    2300192: Paraphet base_06
+    2300194: Paraphet base_07
+    2300196: Paraphet base_08
+    2300198: Paraphet base_09
+    2300200: Paraphet base_10
+    2300202: Paraphet base_11
+    2300204: Paraphet base_12
+    2300206: Paraphet_00
+    2300208: Paraphet_01
+    2300210: Paraphet_02
+    2300212: Paraphet_03
+    2300214: Paraphet_04
+    2300216: Paraphet_05
+    2300218: Paraphet_06
+    2300220: Paraphet_07
+    2300222: Paraphet_08
+    2300224: Paraphet_09
+    2300226: Paraphet_10
+    2300228: Paraphet_11
+    2300230: Paraphet_12
+    2300232: Pillar00
+    2300234: Pillar01
+    2300236: Pillar02
+    2300238: Pillar03
+    2300240: Pillar04
+    2300242: Pillar05
+    2300244: Pillar06
+    2300246: Pillar07
+    2300248: Pillar08
+    2300250: Pillar09
+    2300252: Pillar10
+    2300254: Pillar11
+    2300256: Pillar12
+    2300258: Pillar13
+    2300260: Pillar14
+    2300262: Pillar15
+    2300264: Pillar16
+    2300266: Pillar17
+    2300268: Pillar18
+    2300270: Pillar19
+    2300272: Platform
+    2300274: Roof
+    2300276: wall back
+    2300278: Wall front
+    2300280: Wall left
+    2300282: wall right
+    3300000: Beam
+    3300002: Dark element_00
+    3300004: Dark element_01
+    3300006: Dark element_02
+    3300008: Dark element_03
+    3300010: Dark element_04
+    3300012: Dark element_05
+    3300014: Dark element_06
+    3300016: Dark element_07
+    3300018: Dark element_08
+    3300020: Dark element_09
+    3300022: Dark element_10
+    3300024: Dark element_11
+    3300026: Dark element_12
+    3300028: Dark element_13
+    3300030: Dark element_14
+    3300032: Dark element_15
+    3300034: Dark element_16
+    3300036: Dark element_17
+    3300038: Dark element_18
+    3300040: Dark element_19
+    3300042: Dark element_20
+    3300044: Dark element_21
+    3300046: Dark element_22
+    3300048: Dark element_23
+    3300050: Dark element_24
+    3300052: Dark element_25
+    3300054: Dark element_26
+    3300056: Dark element_27
+    3300058: Dark element_28
+    3300060: Door
+    3300062: Floor
+    3300064: Light element_00
+    3300066: Light element_01
+    3300068: Light element_02
+    3300070: Light element_03
+    3300072: Light element_04
+    3300074: Light element_05
+    3300076: Light element_06
+    3300078: Light element_07
+    3300080: Light element_08
+    3300082: Light element_09
+    3300084: Light element_10
+    3300086: Light element_11
+    3300088: Light element_12
+    3300090: Light element_13
+    3300092: Light element_14
+    3300094: Light element_15
+    3300096: Light element_16
+    3300098: Light element_17
+    3300100: Light element_18
+    3300102: Light element_19
+    3300104: Light element_20
+    3300106: Light element_21
+    3300108: Light element_22
+    3300110: Light element_23
+    3300112: Light element_24
+    3300114: Light element_25
+    3300116: Light element_26
+    3300118: Light element_27
+    3300120: Light element_28
+    3300122: Lightest element00
+    3300124: Lightest element01
+    3300126: Lightest element02
+    3300128: Lightest element03
+    3300130: Lightest element04
+    3300132: Lightest element05
+    3300134: Lightest element06
+    3300136: Lightest element07
+    3300138: Lightest element08
+    3300140: Lightest element09
+    3300142: Lightest element10
+    3300144: Lightest element11
+    3300146: Lightest element12
+    3300148: Lightest element13
+    3300150: Lightest element14
+    3300152: Lightest element15
+    3300154: Lightest element16
+    3300156: Lightest element17
+    3300158: Lightest element18
+    3300160: Lightest element19
+    3300162: Lightest element20
+    3300164: Lightest element21
+    3300166: Lightest element22
+    3300168: Lightest element23
+    3300170: Lightest element24
+    3300172: Lightest element25
+    3300174: Lightest element26
+    3300176: Lightest element27
+    3300178: Lightest element28
+    3300180: Paraphet base_00
+    3300182: Paraphet base_01
+    3300184: Paraphet base_02
+    3300186: Paraphet base_03
+    3300188: Paraphet base_04
+    3300190: Paraphet base_05
+    3300192: Paraphet base_06
+    3300194: Paraphet base_07
+    3300196: Paraphet base_08
+    3300198: Paraphet base_09
+    3300200: Paraphet base_10
+    3300202: Paraphet base_11
+    3300204: Paraphet base_12
+    3300206: Paraphet_00
+    3300208: Paraphet_01
+    3300210: Paraphet_02
+    3300212: Paraphet_03
+    3300214: Paraphet_04
+    3300216: Paraphet_05
+    3300218: Paraphet_06
+    3300220: Paraphet_07
+    3300222: Paraphet_08
+    3300224: Paraphet_09
+    3300226: Paraphet_10
+    3300228: Paraphet_11
+    3300230: Paraphet_12
+    3300232: Pillar00
+    3300234: Pillar01
+    3300236: Pillar02
+    3300238: Pillar03
+    3300240: Pillar04
+    3300242: Pillar05
+    3300244: Pillar06
+    3300246: Pillar07
+    3300248: Pillar08
+    3300250: Pillar09
+    3300252: Pillar10
+    3300254: Pillar11
+    3300256: Pillar12
+    3300258: Pillar13
+    3300260: Pillar14
+    3300262: Pillar15
+    3300264: Pillar16
+    3300266: Pillar17
+    3300268: Pillar18
+    3300270: Pillar19
+    3300272: Platform
+    3300274: Roof
+    3300276: wall back
+    3300278: Wall front
+    3300280: Wall left
+    3300282: wall right
+    4300000: Pillar00
+    4300002: Pillar01
+    4300004: Pillar02
+    4300006: Pillar03
+    4300008: Pillar04
+    4300010: Paraphet_00
+    4300012: Paraphet base_00
+    4300014: Paraphet_01
+    4300016: Paraphet_02
+    4300018: Paraphet base_03
+    4300020: Paraphet base_04
+    4300022: Dark element_00
+    4300024: Light element_04
+    4300026: Lightest element05
+    4300028: Dark element_05
+    4300030: Light element_05
+    4300032: Lightest element04
+    4300034: Dark element_06
+    4300036: Light element_06
+    4300038: Lightest element07
+    4300040: Dark element_07
+    4300042: Light element_07
+    4300044: Lightest element08
+    4300046: Dark element_08
+    4300048: Light element_08
+    4300050: Lightest element06
+    4300052: Dark element_09
+    4300054: Light element_10
+    4300056: Lightest element10
+    4300058: Dark element_10
+    4300060: Light element_09
+    4300062: Lightest element09
+    4300064: Door
+    4300066: Platform
+    4300068: Pillar05
+    4300070: Pillar06
+    4300072: Pillar07
+    4300074: Pillar08
+    4300076: Paraphet_03
+    4300078: Paraphet base_01
+    4300080: Paraphet_04
+    4300082: Paraphet_05
+    4300084: Paraphet base_06
+    4300086: Paraphet base_05
+    4300088: Dark element_01
+    4300090: Light element_02
+    4300092: Lightest element02
+    4300094: Dark element_02
+    4300096: Light element_01
+    4300098: Lightest element01
+    4300100: Dark element_03
+    4300102: Light element_03
+    4300104: Lightest element03
+    4300106: Pillar09
+    4300108: Paraphet_06
+    4300110: Paraphet base_02
+    4300112: Dark element_04
+    4300114: Light element_14
+    4300116: Lightest element16
+    4300118: Dark element_17
+    4300120: Light element_15
+    4300122: Lightest element17
+    4300124: Dark element_16
+    4300126: Light element_17
+    4300128: Lightest element19
+    4300130: Dark element_19
+    4300132: Light element_18
+    4300134: Lightest element00
+    4300136: Dark element_18
+    4300138: Light element_16
+    4300140: Lightest element18
+    4300142: Dark element_21
+    4300144: Light element_20
+    4300146: Lightest element21
+    4300148: Dark element_22
+    4300150: Light element_19
+    4300152: Lightest element20
+    4300154: Dark element_20
+    4300156: Light element_21
+    4300158: Lightest element22
+    4300160: Pillar10
+    4300162: Pillar11
+    4300164: Pillar12
+    4300166: Pillar13
+    4300168: Paraphet_07
+    4300170: Paraphet base_12
+    4300172: Paraphet_08
+    4300174: Paraphet_09
+    4300176: Paraphet base_09
+    4300178: Paraphet base_10
+    4300180: Dark element_11
+    4300182: Light element_00
+    4300184: Lightest element11
+    4300186: Dark element_12
+    4300188: Light element_12
+    4300190: Lightest element12
+    4300192: Dark element_14
+    4300194: Light element_11
+    4300196: Lightest element13
+    4300198: Lightest element14
+    4300200: Dark element_13
+    4300202: Lightest element15
+    4300204: Light element_13
+    4300206: Paraphet_10
+    4300208: Dark element_15
+    4300210: Paraphet_11
+    4300212: Paraphet_12
+    4300214: Lightest element23
+    4300216: Light element_22
+    4300218: Dark element_23
+    4300220: Light element_23
+    4300222: Paraphet base_11
+    4300224: Pillar14
+    4300226: Pillar15
+    4300228: Pillar16
+    4300230: Paraphet base_07
+    4300232: Paraphet base_08
+    4300234: Pillar17
+    4300236: Wall front
+    4300238: wall back
+    4300240: Dark element_24
+    4300242: Light element_24
+    4300244: Lightest element24
+    4300246: Dark element_26
+    4300248: Light element_26
+    4300250: Lightest element25
+    4300252: Pillar18
+    4300254: Pillar19
+    4300256: Dark element_25
+    4300258: Light element_25
+    4300260: Lightest element27
+    4300262: Dark element_28
+    4300264: Light element_27
+    4300266: Lightest element28
+    4300268: Dark element_27
+    4300270: Light element_28
+    4300272: Lightest element26
+    4300274: Beam
+    4300276: wall right
+    4300278: Wall left
+    4300280: Floor
+    4300282: Roof
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #7'
+    second: {fileID: 2100000, guid: 7c24c3b397c9af4459b6b95e11e3f973, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

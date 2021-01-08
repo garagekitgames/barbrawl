@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba81bf194eca444185cb02ecc55d562, type: 3}
+  m_Name: RedDragon_Red_EG_Boss
+  m_EditorClassIdentifier: 
+  groupName: Boss Kenny
+  Enemies:
+  - {fileID: 8552584795590974941, guid: ac8adaccd82ea4b77b9a9b335d90e2d4, type: 3}
+  - {fileID: 1195449488667654239, guid: 7b224f29564404d2f9d33c4a3a35da37, type: 3}
+  maxDifficultyTime: 0.5
