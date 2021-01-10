@@ -149,7 +149,7 @@ namespace garagekitgames
 
                                             if (impulseMagnitude * 2 > 150)
                                             {
-                                                EffectsController.Instance.slowDownTime(4, 0.2f, 0);
+                                                EffectsController.Instance.slowDownTime(4, 0.2f, 1);
 
                                                 cT.breakFace = true;
 
@@ -157,7 +157,7 @@ namespace garagekitgames
                                             }
                                             else if ((impulseMagnitude * 2 <= 150) && (impulseMagnitude * 2 > 10))
                                             {
-                                                EffectsController.Instance.slowDownTime(4, 0.1f, 0);
+                                                EffectsController.Instance.slowDownTime(4, 0.02f, 0);
 
                                                 
                                             }
@@ -245,7 +245,7 @@ namespace garagekitgames
 
                                             if (impulseMagnitude * 2 > 100)
                                             {
-                                                EffectsController.Instance.slowDownTime(4, 0.2f, 0);
+                                                EffectsController.Instance.slowDownTime(4, 0.2f, 1);
 
                                                 cT.breakFace = true;
 
@@ -253,7 +253,7 @@ namespace garagekitgames
                                             }
                                             else if ((impulseMagnitude * 2 <= 100) && (impulseMagnitude * 2 > 10))
                                             {
-                                                EffectsController.Instance.slowDownTime(4, 0.1f, 0);
+                                                EffectsController.Instance.slowDownTime(4, 0.02f, 0);
 
                                             }
                                         }

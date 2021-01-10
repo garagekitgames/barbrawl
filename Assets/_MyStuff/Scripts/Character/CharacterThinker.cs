@@ -499,8 +499,8 @@ namespace garagekitgames
                     
                     damageEffectScript.Blink(0, 0.2f);
 
-
-                    if(CameraShaker.Instance != null)
+                    CameraShaker.Instance.ShakeOnce(num / 5, 10, 0.05f, 0.15f);
+                    if (CameraShaker.Instance != null)
                     {
                         //CameraShaker.Instance.ShakeOnce(num / 5, 40, 0.05f, 0.1f);
                         CameraShaker.Instance.ShakeOnce(num / 5, 10, 0.05f, 0.15f);
@@ -516,7 +516,7 @@ namespace garagekitgames
                     EffectsController.Instance.PlayBreakSound(damage.collisionContacts[0].point, num, damage.collisionCollider.tag);
                    
                     damageEffectScript.Blink(0, 0.4f);
-
+                    CameraShaker.Instance.ShakeOnce(num, 5, 0.05f, 0.8f);
                     if (CameraShaker.Instance != null)
                     {
                         //CameraShaker.Instance.ShakeOnce(num / 5, 10, 0.05f, 0.4f);
