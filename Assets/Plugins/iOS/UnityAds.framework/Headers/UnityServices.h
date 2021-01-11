@@ -1,3 +1,4 @@
+#import "UnityAdsInitializationDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,26 +15,20 @@ typedef NS_ENUM(NSInteger, UnityServicesError) {
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)initialize NS_UNAVAILABLE;
-
-/**
- *  Initializes UnityAds. UnityAds should be initialized when app starts.
- *
- *  @param gameId   Unique identifier for a game, given by Unity Ads admin tools or Unity editor.
- *  @param delegate delegate for UnityAdsDelegate callbacks
- */
-+ (void)initialize:(NSString *)gameId
-          delegate:(nullable id<UnityServicesDelegate>)delegate;
-
 /**
  *  Initializes UnityAds. UnityAds should be initialized when app starts.
  *
  *  @param gameId   Unique identifier for a game, given by Unity Ads admin tools or Unity editor.
  *  @param delegate delegate for UnityAdsDelegate callbacks
  *  @param testMode Set this flag to `YES` to indicate test mode and show only test ads.
+ *  @param usePerPlacementLoad If true, disables automatic requests, and allows the load() function to request placements instead
+ *  @param initializationDelegate Delegate for UnityAdsInitializationDelegate callbacks
  */
 + (void)initialize:(NSString *)gameId
           delegate:(nullable id<UnityServicesDelegate>)delegate
-          testMode:(BOOL)testMode;
+          testMode:(BOOL)testMode
+usePerPlacementLoad:(BOOL)usePerPlacementLoad
+initializationDelegate:(nullable id<UnityAdsInitializationDelegate>)initializationDelegate;
 
 /**
  *  Get the current debug status of `UnityAds`.
@@ -69,6 +64,8 @@ typedef NS_ENUM(NSInteger, UnityServicesError) {
  *  @return If `YES`, Unity Ads has been successfully initialized.
  */
 + (BOOL)isInitialized;
+
++ (NSString *)createExpectedParametersString:(NSString *)fieldName current:(NSString *)current received:(NSString *)received;
 
 @end
 
