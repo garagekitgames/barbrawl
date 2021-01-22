@@ -53,20 +53,34 @@ namespace garagekitgames
             {
                 if (Input.GetMouseButton(0))
                 {
-                    Ray mouseRay = GenerateMouseRay();
-                    RaycastHit hit;
+                    var inputDirection = new Vector3(character.player.GetAxis("LookHorizontal"), 0, character.player.GetAxis("LookVertical"));
+                    inputDirection.Normalize();
+                    inputDirection = Camera.main.transform.TransformDirection(inputDirection);
+                    inputDirection.y = 0.0f;
 
-                    if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, 100, layer))
-                    {
-                        // GameObject temp = Instantiate(target, hit.point, Quaternion.identity);
-                        Debug.DrawRay(mouseRay.origin, mouseRay.direction * hit.distance, Color.yellow);
-                        Debug.Log("mouseRay.origin : " + mouseRay.origin);
-                        Debug.Log("hit.point : " + hit.point);
-                        Debug.Log("--------------");
-                        character.target = hit.point;
-                    }
+                    var globalPosition = character.bpHolder.bodyPartsName["hip"].transform.position + inputDirection * 2;
 
+                    globalPosition.y = 1.8f;
+
+                    character.target = globalPosition;
                 }
+                    
+                //if (Input.GetMouseButton(0))
+                //{
+                //    Ray mouseRay = GenerateMouseRay();
+                //    RaycastHit hit;
+
+                //    if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, 100, layer))
+                //    {
+                //        // GameObject temp = Instantiate(target, hit.point, Quaternion.identity);
+                //        Debug.DrawRay(mouseRay.origin, mouseRay.direction * hit.distance, Color.yellow);
+                //        Debug.Log("mouseRay.origin : " + mouseRay.origin);
+                //        Debug.Log("hit.point : " + hit.point);
+                //        Debug.Log("--------------");
+                //        character.target = hit.point;
+                //    }
+
+                //}
             }
             
         }

@@ -8,6 +8,8 @@ using System.Linq;
 using SO;
 using UnityEngine.Events;
 
+using Rewired;
+
 namespace garagekitgames
 {
     public class CharacterThinker : MonoBehaviour
@@ -21,6 +23,9 @@ namespace garagekitgames
         private Dictionary<string, object> memory;
 
         public CharacterInput input;
+
+        public int playerId = 0;
+        public Player player; // The Rewired Player
 
         public CharacterLegsSimple1 legs; //this is too complex to refactor
 
@@ -194,7 +199,7 @@ namespace garagekitgames
             damageEffectScript = transform.root.GetComponent<DamageEffectScript>();
             health = transform.root.GetComponent<CharacterHealth>();
 
-
+            player = ReInput.players.GetPlayer(playerId);
         }
 
         void OnDisable()

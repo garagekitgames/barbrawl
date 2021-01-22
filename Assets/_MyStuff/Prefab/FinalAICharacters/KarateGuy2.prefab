@@ -88,6 +88,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &275834663939076061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +315,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &4867661616521273779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +513,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &5790347235210513374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,6 +712,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &6421659611634140582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,6 +962,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &2428102163936716018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1133,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &220401129657120280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1335,6 +1347,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &1104946846438831361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1578,6 +1592,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &4580750070232479187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1741,6 +1757,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1860,6 +1877,7 @@ Transform:
   m_Children:
   - {fileID: 1037912600669005682}
   - {fileID: 5346083181153313353}
+  - {fileID: 1097830808853142747}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1929,8 +1947,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4dc0f7e844914c049840d49025743050, type: 2}
   - {fileID: 11400000, guid: 8e1fe04784bae1a42bd2975009510554, type: 2}
   input: {fileID: 0}
+  playerId: 0
   legs: {fileID: 0}
   legConfig: {fileID: 11400000, guid: 80bffed0c05883d4d9e13ca2516ea035, type: 2}
+  speed: 100
   attacks:
   - {fileID: 11400000, guid: 1a30ff71e2c913849a9d68af480b758f, type: 2}
   - {fileID: 11400000, guid: 683462da997697640b10ca4dfaf48fff, type: 2}
@@ -1971,6 +1991,7 @@ MonoBehaviour:
   simplewind: 0
   simpleattack: 0
   attackButtonClickTimer: 0
+  attackPow: 0
   attackPower: 0
   attackTimer: 0
   windTimer: 0
@@ -1980,6 +2001,14 @@ MonoBehaviour:
   damages: []
   cryBodyPart: {fileID: 0}
   cryPart: {fileID: 0}
+  moveMagnitude: 0
+  isGrabbed: 0
+  isHurting: 0
+  grounded: 0
+  OnHitSomething:
+    m_PersistentCalls:
+      m_Calls: []
+  coinsToDrop: 4
 --- !u!114 &4959137801524349439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2028,6 +2057,7 @@ MonoBehaviour:
   inFrontVelocityM: 0.4
   chestBendDownForce: 0
   walking: 0
+  dontWalk: 0
   inputDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &5427117301928385290
 MonoBehaviour:
@@ -2055,12 +2085,6 @@ MonoBehaviour:
   attackPower: 0
   windUp: 0
   attack: 0
-  chargeTimePerDistance:
-    minValue: 0.5
-    maxValue: 0.75
-  timeBetweenShots:
-    minValue: 0.2
-    maxValue: 2
   nextShotAllowedAfter: 0
   fireAt: 0
   justPressed: 0
@@ -2070,6 +2094,18 @@ MonoBehaviour:
   attackDelay: 0.7
   agent: {fileID: 0}
   stopAttack: 0
+  moveNavigationSpeedVariable:
+    minValue: 0
+    maxValue: 0
+  moveForceSpeedVariable:
+    minValue: 0
+    maxValue: 0
+  chargeTimePerDistance:
+    minValue: 0.5
+    maxValue: 0.75
+  timeBetweenShots:
+    minValue: 0.2
+    maxValue: 2
 --- !u!114 &3339890504849892816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2083,6 +2119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damageMaterial: {fileID: 2100000, guid: c3a96541c34a7f045aa74fdbe733e3d0, type: 2}
+  _rendereres: []
+  _listRendereres: []
+  _tempRendereres: []
 --- !u!114 &3902394882005406652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2104,6 +2143,9 @@ MonoBehaviour:
     type: 2}
   character: {fileID: 0}
   looseCharacter: 0
+  isLimp: 0
+  isLimping: 0
+  targetRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &5216081480887433985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2119,8 +2161,6 @@ MonoBehaviour:
   afterDeathEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   destroy: 0
 --- !u!114 &9019776393068077885
 MonoBehaviour:
@@ -2188,8 +2228,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   playerMissEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2204,11 +2242,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   windUpPrefab: {fileID: 363, guid: 9b4e09e97c3764242b66c8d48ff2e363, type: 3}
+  windUpAlertPrefab: {fileID: 0}
   windUpParticle: {fileID: 0}
+  windUpAlertParticle: {fileID: 0}
   currentWindupAttack: {fileID: 0}
+  currentWindupAlert: {fileID: 0}
   windupclips:
   - {fileID: 8300000, guid: 8761cd4b53b5f2044a12e1074a3bca50, type: 3}
   xWT: {fileID: 0}
@@ -2247,8 +2286,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   DeathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2307,8 +2344,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   ResetHP: 1
   character: {fileID: 0}
   alive: 1
@@ -2359,14 +2394,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   OnDisableEvent:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_Slider: {fileID: 0}
+  OnHurtEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRecoverEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Slider: {fileID: 1097830808840794565}
+  isKilledByPlayer: 0
+  isHurting: 0
+  invincibleTimer: -1
+  canBeKnockedDown: 1
+  knockdown: 0
+  maxHealth: 1000
+  currentHealth: 0
+  reduceBasedOnLifeFactor: 0
+  maxWakeupEffort: 10
+  currentWakeupeffort: 0
+  maxKnockoutForce: 50
+  currentKnockoutForce: 0
+  knockdownCount: 0
+  hurtDuration: 0.2
 --- !u!114 &1276045940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2494,6 +2545,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &609094354928479533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2723,6 +2776,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &7058336398378768893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2918,6 +2973,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &266260994017746277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3147,6 +3204,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &2548878054699950663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3342,6 +3401,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &2037174335346152394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3570,6 +3631,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &7180884129204387217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3815,6 +3878,8 @@ MonoBehaviour:
   bodyPartUpright: {fileID: 0}
   deathTargetAngularVelocity: {x: 0, y: 0, z: 0}
   myBrain: {fileID: 0}
+  groundCheck: 0
+  partOnGround: 0
 --- !u!114 &683598396895024767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3922,3 +3987,155 @@ ConfigurableJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1001 &709688553668588618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5843323465833975202}
+    m_Modifications:
+    - target: {fileID: 496828310869272720, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_Name
+      value: HealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310564480038, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310564480038, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 496828310564480039, guid: 935eeac76679ff549a70c3bf0277a0b3,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0.405
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 935eeac76679ff549a70c3bf0277a0b3, type: 3}
+--- !u!224 &1097830808853142747 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 496828310869272721, guid: 935eeac76679ff549a70c3bf0277a0b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 709688553668588618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1097830808840794565 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 496828310856975759, guid: 935eeac76679ff549a70c3bf0277a0b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 709688553668588618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SO;
+using GameAnalyticsSDK;
 
 namespace garagekitgames
 {
@@ -13,8 +14,9 @@ namespace garagekitgames
         {
             base.Awake();
 
+            GameAnalytics.Initialize();
 
-            
+
         }
         // Use this for initialization
         void Start()

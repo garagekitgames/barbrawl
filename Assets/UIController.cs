@@ -72,8 +72,8 @@ namespace garagekitgames
 
             if(UnityAdsManager.Instance.isRewardedAdReady || cashValue.value >= resurrectionCost.value)
             {
-                continueAvailable.Invoke();
-
+                //continueAvailable.Invoke();
+                continueUnavailable.Invoke();
                 Debug.Log("ContinueAvailable");
 
             }

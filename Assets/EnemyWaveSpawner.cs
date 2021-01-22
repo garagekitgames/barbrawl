@@ -215,7 +215,7 @@ namespace garagekitgames
                     for (int i = 0; i < noOfWaves; i++)
                     {
                         var enemyGroup = bossEnemyGroups[Random.Range(0, bossEnemyGroups.Count)];
-                        int count = Random.Range(5, 10);
+                        int count = Mathf.Clamp(Random.Range(1, (currentLevel.value / 2) + 1), 1, 6);
                         waves.Add(new Wave(enemyGroup.groupName, count, 4, enemyGroup));
                     }
 
@@ -246,7 +246,7 @@ namespace garagekitgames
                 roundType = RoundType.Normal;
                 Random.InitState(currentLevel.value);
                 int maxWaves = currentLevel.value;
-                int noOfWaves = Mathf.Clamp(maxWaves, 1, 4);
+                int noOfWaves = Mathf.Clamp(maxWaves, 1, 3);
 
                 if (waves.Count <= 0)
                 {
@@ -255,7 +255,7 @@ namespace garagekitgames
                     for (int i = 0; i < noOfWaves; i++)
                     {
                         var enemyGroup = enemyGroups[Random.Range(0, enemyGroups.Count)];
-                        int count = Mathf.Clamp(Random.Range(1, (currentLevel.value / 2) + 1), 2, 10);
+                        int count = Mathf.Clamp(Random.Range(1, (currentLevel.value / 2) + 1), 1, 6);
                         waves.Add(new Wave(enemyGroup.groupName, count, 1, enemyGroup));
                     }
 
@@ -279,10 +279,10 @@ namespace garagekitgames
 
             if (roundType == RoundType.Normal)
             {
-                if (currentLevel.value <= 20)
+                if (currentLevel.value <= 30)
                 {
-                    enemyHealthLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 3) + 1, 1, 200).ToString();
-                    enemyPowerLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 6) + 1, 1, 200).ToString();
+                    enemyHealthLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 4) + 1, 1, 200).ToString();
+                    enemyPowerLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 7) + 1, 1, 200).ToString();
                 }
                 else
                 {
@@ -296,7 +296,7 @@ namespace garagekitgames
             }
             else if (roundType == RoundType.Boss)
             {
-                if (currentLevel.value <= 20)
+                if (currentLevel.value <= 30)
                 {
                     //enemyThinker.attackPow = Mathf.Clamp((currentLevel.value / 5) + 1, 1, 200);//Random.Range((int)enemyPow.minValue,(int)enemyPow.maxValue);
                     //enemyThinker.health.currentHP.Value = currentPlayer.attackPow * 4;//Mathf.Clamp((currentLevel.value / 5) + 1, 1, 20);//Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);

@@ -81,6 +81,10 @@ namespace garagekitgames
             {
                 m_Slider = GameObject.FindGameObjectWithTag("HealthSlider").GetComponent<Slider>();
             }
+            else
+            {
+
+            }
             
 
             SetHealthUI();
@@ -135,6 +139,12 @@ namespace garagekitgames
                 return;
 
             }
+
+            if(!character.amIMainPlayer)
+            {
+                SetHealthUI();
+            }
+            
         }
 
         // Update is called once per frame

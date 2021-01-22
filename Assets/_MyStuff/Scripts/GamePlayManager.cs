@@ -5,6 +5,8 @@ using SO;
 using UnityEngine.Events;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 namespace garagekitgames
 {
@@ -46,6 +48,13 @@ namespace garagekitgames
 
         public IntVariable cashValue;
         public IntVariable resurrectionCost;
+
+        public float timeLeft = 3.0f;
+        //public bool gameStarted;
+        public Text startText; // used for showing countdown from 3, 2, 1 
+        public GameObject tapToStartGO;
+        bool tapped;
+        public bool useCountDown;
         // Use this for initialization
         private void Awake()
         {
@@ -58,10 +67,11 @@ namespace garagekitgames
 
         void Start()
         {
-
+            startText.transform.gameObject.SetActive(false);
             AudioManager.instance.FadeInCaller("BGM1", 0.1f, 0.3f);
             AudioManager.instance.FadeOutCaller("BGM2", 0.1f);
             OnGameLaunch.Invoke();
+            //gameStarted = true;
             //enemyManager.stopDoingShit = true;
             /*if(tutorialTarget[1] && showTutorialOnStart.value)
             {
@@ -70,10 +80,61 @@ namespace garagekitgames
 
         }
 
+        public IEnumerator DelayedStart()
+        {
+            yield return new WaitForSeconds(3);
+        }
+
         // Update is called once per frame
         void Update()
         {
-            
+            if (Input.GetMouseButton(0) && !tapped)
+            {
+                tapped = true; 
+                gameStarted = true;
+                tapToStartGO.SetActive(false);
+            }
+
+            if (gameStarted)
+            {
+                if(useCountDown)
+                {
+                    timeLeft -= Time.deltaTime;
+                    startText.text = (timeLeft).ToString("0");
+                    startText.transform.gameObject.SetActive(true);
+
+                    if (timeLeft > 2 && timeLeft < 3)
+                    {
+                        //AudioManager.instance.Play("Two");
+                    }
+                    if (timeLeft > 1 && timeLeft < 2)
+                    {
+                        // AudioManager.instance.Play("One");
+                    }
+
+                    if (timeLeft > 0 && timeLeft < 1)
+                    {
+                        startText.text = "GO";
+                        // AudioManager.instance.Play("Go");
+                        //Do something useful or Load a new game scene depending on your use-case
+                    }
+                    if (timeLeft < 0)
+                    {
+                        startText.transform.gameObject.SetActive(false);
+                        //OnCountdownEnd.Invoke();
+                        OnGameStart.Invoke();
+                        gameStarted = false;
+                    }
+                }
+                else
+                {
+                    startText.transform.gameObject.SetActive(false);
+                    //OnCountdownEnd.Invoke();
+                    OnGameStart.Invoke();
+                    gameStarted = false;
+                }
+                
+            }
         }
 
         public BoolVariable IsTutorialSuccess()
@@ -102,7 +163,8 @@ namespace garagekitgames
 
         public void OnTutorialSuccess()
         {
-            OnGameStart.Invoke();
+            //OnGameStart.Invoke();
+
             //enemyManager.stopDoingShit = false;
             /* tutorialSuccess.value = true;
 
