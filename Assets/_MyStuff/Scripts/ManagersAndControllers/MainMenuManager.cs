@@ -84,19 +84,30 @@ namespace garagekitgames
                 radius = (distanceBetweenCharacter * numObjects) / (2 * Mathf.PI);
                 float theta = (2 * Mathf.PI / numObjects) * i;
                 Vector3 pos = RandomCircle2(center, radius, i, theta);
-                var playerGameObject = Instantiate(levelData[i].Player, pos, Quaternion.identity);
-                CharacterThinker character = playerGameObject.GetComponent<CharacterThinker>();
-                character.target = new Vector3(0, 1, 0);
-                //character.SetStopDoingShit(true);
-                levelCharacters.Add(playerGameObject);
+
+                if(SceneManager.GetActiveScene().name == "MainMenu")
+                {
+                    var playerGameObject = Instantiate(levelData[i].Player, pos, Quaternion.identity);
+                    CharacterThinker character = playerGameObject.GetComponent<CharacterThinker>();
+                    character.target = new Vector3(0, 1, 0);
+                    //character.SetStopDoingShit(true);
+                    levelCharacters.Add(playerGameObject);
+                }
+                
             }
 
-            playButton.SetActive(true);
-            //buyUIButton.
-            buyButton.SetActive(false);
-            lockImage.SetActive(false);
+            if (SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                playButton.SetActive(true);
+                //buyUIButton.
+                buyButton.SetActive(false);
+                lockImage.SetActive(false);
 
-            updateCashUI.Invoke();
+                updateCashUI.Invoke();
+            }
+               
+
+            //UpdateSelectedLevel(selectedIndex.value);
             //playButton.
             /* for (int i = 0; i < numObjects; ++i)
              {
@@ -115,12 +126,17 @@ namespace garagekitgames
 
         private void Start()
         {
-
+            //GameManager.Instance.currentLevelInfo = levels[selectedIndex.value];
             //CameraShaker.Instance.Shake(CameraShakePresets.HandheldCamera).StartFadeIn(0.5f);
             //CameraShakeInstance c = new CameraShakeInstance(1f, 0.25f, 5f, 10f);
             //c.PositionInfluence = Vector3.zero;
             //c.RotationInfluence = new Vector3(1, 0.5f, 0.5f);
-            CameraShaker.Instance.StartShake(1f, 0.25f, 5f);
+
+            if (SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                CameraShaker.Instance.StartShake(1f, 0.25f, 5f);
+            }
+                
             UpdateSelectedLevel(selectedIndex.value);
             AudioManager.instance.FadeInCaller("BGM2", 0.1f, 0.3f);
             AudioManager.instance.FadeOutCaller("BGM1", 0.1f);
@@ -181,40 +197,56 @@ namespace garagekitgames
             var cT = new CharacterThinker();
             Debug.Log("Level Updated Clicked");
             //currentLevel = levelData[index];
-            currentLevel.Enemies = levelData[index].Enemies;
-            currentLevel.Player = levelData[index].Player;
-            currentLevel.spawnPoint = levelData[index].spawnPoint;
-            currentLevel.enemyGroups = levelData[index].enemyGroups;
-            currentLevel.maxHealth = levels[index].maxHealth;
-            currentLevel.currentHealth = levels[index].currentHealth;
-            currentLevel.maxPow = levels[index].maxPow;
-            currentLevel.currentPow = levels[index].currentPow;
-            currentLevel.charName = levels[index].charName;
-            mainCam.target = levelCharacters[index].transform.GetComponent<CharacterThinker>().bpHolder.bodyParts[lookAtPart].BodyPartTransform;
-            buttonCashValueUI.text = levelData[index].levelPrice.ToString();
-            healthSlider.value = levels[index].currentHealth;
-            healthSlider.minValue = 0;
-            healthSlider.maxValue = levels[index].maxHealth;
-            powerSlider.value = levels[index].currentPow;
-            powerSlider.minValue = 0;
-            powerSlider.maxValue = levels[index].maxPow;
-            characterName.text = levels[index].charName;
 
-            healthLevel.text = statLevelPrefix + levels[index].currentHealth;
-            powerLevel.text = statLevelPrefix + levels[index].currentPow;
+            if (SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                mainCam.target = levelCharacters[index].transform.GetComponent<CharacterThinker>().bpHolder.bodyParts[lookAtPart].BodyPartTransform;
+                buttonCashValueUI.text = levelData[index].levelPrice.ToString();
+                healthSlider.value = levels[index].currentHealth;
+                healthSlider.minValue = 0;
+                healthSlider.maxValue = levels[index].maxHealth;
+                powerSlider.value = levels[index].currentPow;
+                powerSlider.minValue = 0;
+                powerSlider.maxValue = levels[index].maxPow;
+                characterName.text = levels[index].charName;
 
-            GameManager.Instance.currentLevelInfo = levels[index];
+                healthLevel.text = statLevelPrefix + levels[index].currentHealth;
+                powerLevel.text = statLevelPrefix + levels[index].currentPow;
+            }
+                
+
+            
+
+            
             if (levels[index].isUnlocked)
             {
-                playButton.SetActive(true);
-                buyButton.SetActive(false);
-                lockImage.SetActive(false);
+                currentLevel.Enemies = levelData[index].Enemies;
+                currentLevel.Player = levelData[index].Player;
+                currentLevel.spawnPoint = levelData[index].spawnPoint;
+                currentLevel.enemyGroups = levelData[index].enemyGroups;
+                currentLevel.maxHealth = levels[index].maxHealth;
+                currentLevel.currentHealth = levels[index].currentHealth;
+                currentLevel.maxPow = levels[index].maxPow;
+                currentLevel.currentPow = levels[index].currentPow;
+                currentLevel.charName = levels[index].charName;
+                GameManager.Instance.currentLevelInfo = levels[index];
+                if (SceneManager.GetActiveScene().name == "MainMenu")
+                {
+                    playButton.SetActive(true);
+                    buyButton.SetActive(false);
+                    lockImage.SetActive(false);
+                }
+                    
             }
             else
             {
-                playButton.SetActive(false);
-                buyButton.SetActive(true);
-                lockImage.SetActive(true);
+                if (SceneManager.GetActiveScene().name == "MainMenu")
+                {
+                    playButton.SetActive(false);
+                    buyButton.SetActive(true);
+                    lockImage.SetActive(true);
+                }
+                    
             }
 
         }

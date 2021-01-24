@@ -7,6 +7,10 @@ public class MultiFighterCamera : MonoBehaviour
 
     public Vector3 offset;
 
+    public Vector3 deathOffset;
+
+    Vector3 startingOffset;
+
     private Vector3 lastOffset;
 
     public Vector3 targetsCenter;
@@ -50,6 +54,7 @@ public class MultiFighterCamera : MonoBehaviour
             this.UpdateCenter();
         }
         this.lastLookAtPosition = this.targetsCenter;
+        startingOffset = offset;
     }
 
     private void LateUpdate()
@@ -57,6 +62,16 @@ public class MultiFighterCamera : MonoBehaviour
         
             this.UpdateCamera();
        
+    }
+
+    public void OnDeath()
+    {
+        offset = deathOffset;
+    }
+
+    public void OnRevive()
+    {
+        offset = startingOffset;
     }
 
     private void UpdateCamera()

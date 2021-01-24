@@ -279,10 +279,26 @@ namespace garagekitgames
 
             if (roundType == RoundType.Normal)
             {
-                if (currentLevel.value <= 30)
+                //if (currentLevel.value <= 20)
+                //{
+                //    enemyThinker.attackPow = Mathf.Clamp((currentLevel.value / 6) + 1, 1, 200);//Random.Range((int)enemyPow.minValue,(int)enemyPow.maxValue);
+                //    enemyThinker.health.currentHP.Value = Mathf.Clamp((currentLevel.value / 3) + 1, 1, 200);//Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+                //    enemyThinker.health.maxHP.Value = Mathf.Clamp((currentLevel.value / 3) + 1, 1, 200);// Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+
+                //}
+                //else
+                //{
+
+                //    enemyThinker.attackPow = Mathf.Clamp((currentLevel.value / 4) + 1, 1, 200);//Random.Range((int)enemyPow.minValue,(int)enemyPow.maxValue);
+                //    enemyThinker.health.currentHP.Value = Mathf.Clamp((currentLevel.value / 2) + 1, 1, 200);//Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+                //    enemyThinker.health.maxHP.Value = Mathf.Clamp((currentLevel.value / 2) + 1, 1, 200);// Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+
+                //}
+
+                if (currentLevel.value <= 20)
                 {
-                    enemyHealthLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 4) + 1, 1, 200).ToString();
-                    enemyPowerLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 7) + 1, 1, 200).ToString();
+                    enemyHealthLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 3) + 1, 1, 200).ToString();
+                    enemyPowerLevel.text = "Lvl " + Mathf.Clamp((currentLevel.value / 6) + 1, 1, 200).ToString();
                 }
                 else
                 {
@@ -296,7 +312,24 @@ namespace garagekitgames
             }
             else if (roundType == RoundType.Boss)
             {
-                if (currentLevel.value <= 30)
+
+                //if (currentLevel.value <= 20)
+                //{
+                //    enemyThinker.attackPow = Mathf.Clamp((currentLevel.value / 5) + 1, 1, 200);//Random.Range((int)enemyPow.minValue,(int)enemyPow.maxValue);
+                //    enemyThinker.health.currentHP.Value = currentPlayer.attackPow * 4;//Mathf.Clamp((currentLevel.value / 5) + 1, 1, 20);//Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+                //    enemyThinker.health.maxHP.Value = currentPlayer.attackPow * 4;// Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+
+                //}
+                //else
+                //{
+                //    enemyThinker.attackPow = Mathf.Clamp((currentLevel.value / 5) + 1, 1, 200);//Random.Range((int)enemyPow.minValue,(int)enemyPow.maxValue);
+                //    enemyThinker.health.currentHP.Value = currentPlayer.attackPow * 10;//Mathf.Clamp((currentLevel.value / 5) + 1, 1, 20);//Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+                //    enemyThinker.health.maxHP.Value = currentPlayer.attackPow * 10;// Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
+
+                //}
+
+
+                if (currentLevel.value <= 20)
                 {
                     //enemyThinker.attackPow = Mathf.Clamp((currentLevel.value / 5) + 1, 1, 200);//Random.Range((int)enemyPow.minValue,(int)enemyPow.maxValue);
                     //enemyThinker.health.currentHP.Value = currentPlayer.attackPow * 4;//Mathf.Clamp((currentLevel.value / 5) + 1, 1, 20);//Random.Range((int)enemyHealth.minValue, (int)enemyHealth.maxValue);
