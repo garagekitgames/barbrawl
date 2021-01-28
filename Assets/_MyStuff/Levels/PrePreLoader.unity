@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44004717, g: 0.48854464, b: 0.5687399, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -827,6 +827,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871386272}
   m_CullTransparentMesh: 0
+--- !u!1 &1872350302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1872350304}
+  - component: {fileID: 1872350303}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1872350303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872350302}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3959c1f48307a4dbb2b53e77662314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallColors:
+  - {r: 0.57254905, g: 0.49411768, b: 0.6901961, a: 0}
+  - {r: 0.14901961, g: 0.14901961, b: 0.34509805, a: 0}
+  - {r: 0.6156863, g: 0.58431375, b: 0.74509805, a: 0}
+  - {r: 0.5568628, g: 0.48627454, b: 0.68235296, a: 0}
+  - {r: 0.7176471, g: 0.69411767, b: 0.8862746, a: 0}
+  - {r: 0.4901961, g: 0.3529412, b: 0.48235297, a: 0}
+  - {r: 0.91372555, g: 0.5882353, b: 0.8862746, a: 0}
+  - {r: 0.12941177, g: 0.5568628, b: 0.5411765, a: 0}
+  - {r: 0.23137257, g: 0.019607844, b: 0.30980393, a: 0}
+  - {r: 0.882353, g: 0.16470589, b: 0.38431376, a: 0}
+  - {r: 1, g: 0.44705886, b: 0, a: 0}
+  - {r: 0.8980393, g: 0.77647066, b: 0.654902, a: 0}
+  - {r: 0.6745098, g: 0.8313726, b: 0.6901961, a: 0}
+  - {r: 0.8196079, g: 0.65882355, b: 0.74509805, a: 0}
+  - {r: 0.86666673, g: 0.5647059, b: 0.54901963, a: 0}
+  - {r: 0.4901961, g: 0.24313727, b: 0.34117648, a: 0}
+  - {r: 0.80392164, g: 0.7411765, b: 0.7607844, a: 0}
+  groundColors:
+  - {r: 0.5647059, g: 0.65882355, b: 0.9215687, a: 0}
+  - {r: 0.34901962, g: 0.3921569, b: 0.54901963, a: 0}
+  - {r: 0.7607844, g: 0.48627454, b: 0.47450984, a: 0}
+  - {r: 0.5647059, g: 0.65882355, b: 0.9215687, a: 0}
+  - {r: 0.62352943, g: 0.5882353, b: 0.79215693, a: 0}
+  - {r: 0.50980395, g: 0.59607846, b: 0.8313726, a: 0}
+  - {r: 0.8235295, g: 0.7176471, b: 0.5764706, a: 0}
+  - {r: 0.9960785, g: 0.70980394, b: 0.21960786, a: 0}
+  - {r: 0.91372555, g: 0.7725491, b: 0.57254905, a: 0}
+  - {r: 0.73333335, g: 0.44705886, b: 0.2627451, a: 0}
+  - {r: 0.58431375, g: 0.14901961, b: 0.21568629, a: 0}
+  - {r: 0.12941177, g: 0.18039216, b: 0.3254902, a: 0}
+  - {r: 0.73333335, g: 0.44705886, b: 0.2627451, a: 0}
+  - {r: 0.52156866, g: 0.59607846, b: 0.48235297, a: 0}
+  - {r: 0.4156863, g: 0.5294118, b: 0.5529412, a: 0}
+  - {r: 0.6156863, g: 0.4431373, b: 0.3372549, a: 0}
+  - {r: 0.38823533, g: 0.45882356, b: 0.5294118, a: 0}
+  - {r: 0.90196085, g: 0.87843144, b: 0.74509805, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  wallMaterial: {fileID: 0}
+  floorMaterial: {fileID: 0}
+--- !u!4 &1872350304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872350302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.7262926, y: 7.619467, z: -0.08489227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990818992
 GameObject:
   m_ObjectHideFlags: 0

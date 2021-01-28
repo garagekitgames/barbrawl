@@ -76,6 +76,8 @@ namespace garagekitgames
 
             }
 
+            inputDirection = new Vector3(character.player.GetAxis("LookHorizontal"), 0, character.player.GetAxis("LookVertical"));
+
             //inputDirection = new Vector3(inputDevice.LeftStickX, 0, inputDevice.LeftStickY);
             moveMagnitude = inputDirection.magnitude;
             if (inputDirection != Vector3.zero)

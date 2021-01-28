@@ -63,6 +63,7 @@ namespace garagekitgames
                     globalPosition.y = 1.8f;
 
                     character.target = globalPosition;
+                   // character.inputDirection = 
                 }
                     
                 //if (Input.GetMouseButton(0))

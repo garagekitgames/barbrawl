@@ -29,7 +29,7 @@ namespace garagekitgames
                     m_AimSlider = GameObject.FindGameObjectWithTag("AttackSlider").GetComponent<Slider>();
                 }
             }
-
+            m_FullHealthColor = Color.white;
             //m_FillImage = transform.GetComponentInChildren<Canvas>();
             //playerCanvas = transform.GetComponentInChildren<Canvas>();
 
